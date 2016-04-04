@@ -1,7 +1,7 @@
-Nome: Guilherme Bolzan Monteiro
-ELC139 - Programação Paralela
+	Nome: Guilherme Bolzan Monteiro
+	ELC139 - Programação Paralela
 
-Parte 1: Pthreads
+	Parte 1: Pthreads
 1) 
 A etapa de particionamento se dá na definição da struct dotdata_t ao termos dois vetores (a e b):
 
@@ -71,7 +71,7 @@ Isso não garante que apenas uma thread faça a soma parcial por vez, o que pode
 Cabe ressaltar que nem sempre ocorrerá essa discrepância, mas sem o uso do lock e unlock estaremos correndo esse risco.
 
 
-Parte 2: OpenMP
+	Parte 2: OpenMP
 1) O programa que fiz dá o seguinte erro:
 libgomp: Invalid value for environment variable OMP_NUM_THREADS
 O que eu fiz é o seguinte:
@@ -129,7 +129,7 @@ O que eu fiz é o seguinte:
                 for (i = 0; i < OMP_NUM_THREADS; i++) {
                         dotprod_worker;
                 }
-   }
+   	}
 
         long wtime()
         {
@@ -184,8 +184,8 @@ O que eu fiz é o seguinte:
         }
         
         
-Referências: 
-https://www.dcc.fc.up.pt/~ricroc/aulas/0708/ppd/apontamentos/fundamentos.pdf
-https://www.sourceware.org/pthreads-win32/manual/pthread_mutex_init.html
-www.ibm.com/developerworks/br/aix/library/au-aix-openmp-framework/
-https://www.dartmouth.edu/~rc/classes/intro_openmp/compile_run.html
+	Referências: 
+	https://www.dcc.fc.up.pt/~ricroc/aulas/0708/ppd/apontamentos/fundamentos.pdf
+	https://www.sourceware.org/pthreads-win32/manual/pthread_mutex_init.html
+	www.ibm.com/developerworks/br/aix/library/au-aix-openmp-framework/
+	https://www.dartmouth.edu/~rc/classes/intro_openmp/compile_run.html
